@@ -1,0 +1,147 @@
+/* =========================
+   DARK THEME (DEFAULT)
+========================= */
+
+body.dark-theme{
+    background:#0B1220;
+    color:#F8FAFC;
+}
+
+body.dark-theme .navbar{
+    background:rgba(11,18,32,.75);
+}
+
+body.dark-theme nav a{
+    color:#F8FAFC;
+}
+
+body.dark-theme .logo{
+    color:#22D3EE;
+}
+
+body.dark-theme .theme-btn{
+    background:#111827;
+    color:#22D3EE;
+}
+
+body.dark-theme .tag{
+    background:rgba(34,211,238,.12);
+    color:#22D3EE;
+    border:1px solid rgba(34,211,238,.3);
+}
+
+body.dark-theme .btn.primary{
+    background:#22D3EE;
+    color:#0B1220;
+}
+
+body.dark-theme .btn.secondary{
+    background:#111827;
+    color:#F8FAFC;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+body.dark-theme .card{
+    background:rgba(17,24,39,.85);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.25);
+}
+
+body.dark-theme .highlight{
+    border-color:#22D3EE;
+}
+
+body.dark-theme .skills span{
+    background:#111827;
+    border:1px solid rgba(34,211,238,.25);
+}
+
+body.dark-theme .timeline div{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+body.dark-theme footer{
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+body.dark-theme .hexagon{
+    box-shadow:
+        0 0 40px rgba(34,211,238,.15),
+        0 0 80px rgba(34,211,238,.08);
+}
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+body.light-theme{
+    background:#FFFFFF;
+    color:#0F172A;
+}
+
+body.light-theme .navbar{
+    background:rgba(255,255,255,.85);
+}
+
+body.light-theme nav a{
+    color:#0F172A;
+}
+
+body.light-theme .logo{
+    color:#2563EB;
+}
+
+body.light-theme .theme-btn{
+    background:#F1F5F9;
+    color:#2563EB;
+}
+
+body.light-theme .tag{
+    background:#EFF6FF;
+    color:#2563EB;
+    border:1px solid #BFDBFE;
+}
+
+body.light-theme .btn.primary{
+    background:#2563EB;
+    color:white;
+}
+
+body.light-theme .btn.secondary{
+    background:#F8FAFC;
+    color:#0F172A;
+    border:1px solid #E2E8F0;
+}
+
+body.light-theme .card{
+    background:#FFFFFF;
+    border:1px solid #E2E8F0;
+    box-shadow:
+        0 10px 30px rgba(15,23,42,.05);
+}
+
+body.light-theme .highlight{
+    border-color:#2563EB;
+}
+
+body.light-theme .skills span{
+    background:#F8FAFC;
+    border:1px solid #CBD5E1;
+}
+
+body.light-theme .timeline div{
+    background:#F8FAFC;
+    border:1px solid #E2E8F0;
+}
+
+body.light-theme footer{
+    border-top:1px solid #E2E8F0;
+}
+
+body.light-theme .hexagon{
+    box-shadow:
+        0 15px 40px rgba(37,99,235,.12);
+}
