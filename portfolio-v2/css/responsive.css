@@ -1,0 +1,105 @@
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1024px){
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-image{
+        order:-1;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    nav ul{
+        gap:1rem;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+    .navbar .container{
+        flex-wrap:wrap;
+        gap:1rem;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero{
+        padding:120px 0 60px;
+        min-height:auto;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .hero h2{
+        font-size:1.1rem;
+    }
+
+    .section{
+        padding:80px 0;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .hexagon{
+        width:240px;
+        height:270px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+}
+
+/* =========================
+   SMALL DEVICES
+========================= */
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size:1.9rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .cards-grid{
+        grid-template-columns:1fr;
+    }
+
+    .timeline{
+        grid-template-columns:1fr;
+    }
+
+    .hexagon{
+        width:200px;
+        height:230px;
+    }
+
+}
