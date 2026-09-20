@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aryan Parashar (Aryadhiswar Parasar) — technology professional exploring AI, cybersecurity, automation, and intelligent systems.">
+    <meta name="author" content="Aryadhiswar Parasar">
+    <meta name="theme-color" content="#10121b">
+    <title>Aryan Parashar — AI, Cybersecurity &amp; Automation</title>
+    <link rel="canonical" href="https://aryanparashar165.github.io/test/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aryan Parashar — AI, Cybersecurity &amp; Automation">
+    <meta property="og:description" content="Technology professional exploring AI, cybersecurity, automation, and intelligent systems.">
+    <meta property="og:url" content="https://aryanparashar165.github.io/test/">
+    <meta property="og:site_name" content="Aryan Parashar">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom Theme CSS -->
+    <link href="css/portfolio.css" rel="stylesheet">
+  </head>
+  <body data-preloader="false">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    
+    <!-- Header Navigation -->
+    <header class="header sticky-top" aria-label="Primary navigation">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <a class="header-logo" href="#top" aria-label="Aryan Parashar, home">
+            <span class="logo-badge">AP</span>
+            <strong>Aryan Parashar</strong>
+          </a>
+          
+          <nav class="header-nav" aria-label="Main menu">
+            <div class="d-flex gap-2 align-items-center">
+              <a class="btn btn-sm btn-outline-light" href="#contact">Let's connect</a>
+              
+              <button id="theme-toggle" class="btn btn-sm btn-outline-light" type="button" aria-label="Switch theme">
+                <i class="bi bi-sun"></i>
+              </button>
+              
+              <button id="nav-toggle" class="btn btn-sm btn-outline-light d-lg-none" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="nav-box" id="nav-menu" style="display: none;">
+          <div class="nav-mobile">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#focus" class="nav-link">Focus</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#credentials" class="nav-link">Credentials</a>
+            <a href="#direction" class="nav-link">Direction</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+<!--HERO SECTION STYLES     These styles are intentionally kept inside index.html so the hero layout can be maintained independently from the main portfolio stylesheet. -->
+<style>
+
+  /* DESKTOP HERO */
+
+  @media (min-width: 992px) {
+
+    /* Give the hero breathing room below the sticky header */
+    .hero-section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    /* Keep both columns aligned from the top */
+    .hero-section > .container > .row {
+      align-items: stretch;
+    }
+
+
+    /* LEFT COLUMN */
+
+    .hero-section .eyebrow {
+      margin-bottom: 1rem;
+    }
+
+    .hero-section .hero-heading {
+      margin-bottom: 1.25rem !important;
+    }
+
+    .hero-section .hero-direction {
+      margin-bottom: 1rem;
+    }
+
+    .hero-section .hero-intro {
+      max-width: 820px;
+      margin-bottom: 0;
+    }
+
+
+    /* CURRENTLY CARD Keep it compact and horizontal. */
+
+    .hero-section .signal-card {
+      width: 100%;
+      min-height: 0 !important;
+      height: auto !important;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem !important;
+    }
+
+    .hero-section .signal-label {
+      margin-bottom: 0;
+    }
+
+    .hero-section .signal-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 1rem;
+      min-height: 0;
+    }
+
+    .hero-section .signal-item {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      padding: .25rem 1.25rem;
+      min-width: 0;
+    }
+
+    .hero-section .signal-item:first-child {
+      padding-left: 0;
+    }
+
+    .hero-section .signal-item:last-child {
+      padding-right: 0;
+    }
+
+    .hero-section .signal-item + .signal-item {
+      border-left: 1px solid var(--line);
+    }
+
+    .hero-section .signal-icon {
+      flex: 0 0 auto;
+      font-size: 1.35rem;
+      color: var(--accent);
+    }
+
+    .hero-section .signal-item strong,
+    .hero-section .signal-item span {
+      display: block;
+    }
+
+    .hero-section .signal-item strong {
+      margin-bottom: .25rem;
+    }
+
+
+    /* HERO BUTTONS */
+
+    .hero-section .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin-top: 1.25rem !important;
+    }
+
+
+    /* PORTRAIT Tall, but not excessively tall. */
+
+    .hero-section .profile-section {
+      height: 100%;
+      min-height: 0;
+      display: flex;
+    }
+
+    .hero-section .profile-placeholder {
+      width: 100%;
+      height: 530px;
+      min-height: 0;
+      overflow: hidden;
+      border-radius: 1.25rem;
+    }
+
+    .hero-section .profile-placeholder img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+  }
+
+
+  /* TABLET / MOBILE */
+
+  @media (max-width: 991.98px) {
+
+    .hero-section {
+      padding-top: 2.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .hero-section .signal-card {
+      min-height: 0 !important;
+      height: auto !important;
+      padding: 1.25rem;
+    }
+
+    .hero-section .signal-items {
+      display: grid;
+      gap: .9rem;
+      margin-top: 1rem;
+    }
+
+    .hero-section .signal-item {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .hero-section .signal-item + .signal-item {
+      padding-top: .9rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .hero-section .signal-icon {
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-size: 1.35rem;
+    }
+
+    .hero-section .profile-section {
+      min-height: 0;
+    }
+
+    .hero-section .profile-placeholder {
+      height: 520px;
+      min-height: 0;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+
+    .hero-section .profile-placeholder img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .hero-section .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+  }
+
+
+  /* SMALL PHONES */
+
+  @media (max-width: 575.98px) {
+
+    .hero-section {
+      padding-top: 2rem;
+    }
+
+    .hero-section .profile-placeholder {
+      height: 420px;
+    }
+
+    .hero-section .hero-actions {
+      width: 100%;
+    }
+
+    .hero-section .hero-actions .btn {
+      flex: 1 1 100%;
+    }
+
+  }
+
+</style>
+
+
+<!-- HERO SECTION -->
+
+<section id="top" class="hero-section" aria-labelledby="hero-title">
+
+  <div class="container">
+
+    <div class="row align-items-start g-4 g-lg-5">
+
+      <!-- LEFT COLUMN Introduction + Current Status + Actions -->
+
+      <div class="col-lg-7">
+
+        <!-- Name and location -->
+        <p class="eyebrow">
+          Aryadhiswar Parasar
+          <span aria-hidden="true">/</span>
+          Bhubaneswar, Odisha, India
+        </p>
+
+        <!-- Main heading -->
+        <h1 id="hero-title" class="hero-heading display-1 fw-bold mb-3">
+          ARYAN<br>PARASHAR
+        </h1>
+
+        <!-- Technical direction -->
+        <p class="hero-direction">
+          AI
+          <span aria-hidden="true">•</span>
+          CYBERSECURITY
+          <span aria-hidden="true">•</span>
+          AUTOMATION
+        </p>
+
+        <!-- Introduction -->
+        <p class="hero-intro">
+          BCA graduate and technology professional exploring artificial intelligence,
+          cybersecurity, automation, and intelligent systems.
+        </p>
+
+
+        <!-- CURRENT STATUS -->
+
+        <div class="signal-card">
+
+          <h3 class="signal-label text-uppercase">
+            Currently
+          </h3>
+
+          <div class="signal-items">
+
+            <!-- Role -->
+            <div class="signal-item">
+              <span class="signal-icon" aria-hidden="true">
+                <i class="bi bi-briefcase"></i>
+              </span>
+
+              <div>
+                <strong>Role</strong>
+                <span>IT Consultant at IBM</span>
+              </div>
+            </div>
+
+            <!-- Focus -->
+            <div class="signal-item">
+              <span class="signal-icon" aria-hidden="true">
+                <i class="bi bi-bullseye"></i>
+              </span>
+
+              <div>
+                <strong>Focus</strong>
+                <span>AI, Cybersecurity, Automation</span>
+              </div>
+            </div>
+
+            <!-- Learning -->
+            <div class="signal-item">
+              <span class="signal-icon" aria-hidden="true">
+                <i class="bi bi-book"></i>
+              </span>
+
+              <div>
+                <strong>Learning</strong>
+                <span>Generative AI, SAP Systems</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- HERO ACTIONS -->
+
+        <div class="hero-actions mt-4">
+
+          <!-- View portfolio -->
+          <a
+            class="btn btn-primary btn-lg"
+            href="#projects"
+          >
+            View my work
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            class="btn btn-outline-primary btn-lg"
+            href="https://www.linkedin.com/in/aryadhiswar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+          <!-- Email -->
+          <a
+            class="btn btn-outline-primary btn-lg"
+            href="mailto:aryanparashar561@gmail.com"
+          >
+            Email
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+        <!-- RIGHT COLUMN - Tall Professional Portrait -->
+      <div class="col-lg-5">
+
+        <div class="profile-section">
+
+          <div class="profile-placeholder">
+
+            <img
+              src="images/profile.jpg"
+              alt="Aryan Parashar - Professional headshot"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-box py-5 py-lg-8 bg-light-dark">
+  <div class="container">
+
+    <div class="row g-4 g-lg-5">
+
+      <!-- About introduction -->
+      <div class="col-lg-6">
+        <h2 class="h3 mb-3">About me</h2>
+
+        <p class="lead text-muted mb-4">
+          BCA graduate with hands-on experience in web development,
+          enterprise systems, and technology exploration.
+        </p>
+      </div>
+
+      <!-- About information cards -->
+      <div class="col-lg-6">
+
+        <div class="row g-3">
+
+          <!-- Education -->
+          <div class="col-md-6">
+            <article
+              class="info-card h-100"
+              style="min-height: 155px;"
+            >
+              <h3 class="h5">Education</h3>
+
+              <p class="small text-muted">
+                Bachelor of Computer Applications (BCA)
+              </p>
+            </article>
+          </div>
+
+          <!-- Experience -->
+          <div class="col-md-6">
+            <article
+              class="info-card h-100"
+              style="min-height: 155px;"
+            >
+              <h3 class="h5">Experience</h3>
+
+              <p class="small text-muted">
+                2+ years in web development and enterprise consulting
+              </p>
+            </article>
+          </div>
+
+          <!-- Skills -->
+          <div class="col-md-6">
+            <article
+              class="info-card h-100"
+              style="min-height: 155px;"
+            >
+              <h3 class="h5">Skills</h3>
+
+              <p class="small text-muted">
+                Python, Java, C++, JavaScript, Linux, SQL, SAP
+              </p>
+            </article>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-6">
+            <article
+              class="info-card h-100"
+              style="min-height: 155px;"
+            >
+              <h3 class="h5">Location</h3>
+
+              <p class="small text-muted">
+                Bhubaneswar, Odisha, India<br>
+                Available for remote work
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <!-- Technical Focus Section -->
+      <section id="focus" class="section-box py-5 py-lg-8">
+        <div class="container">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-4">
+              <p class="section-kicker">02 / Technical focus</p>
+              <h2 class="display-4 fw-medium mb-3">What I'm<br><span class="text-gradient">working with.</span></h2>
+              <p class="text-muted">A growing toolkit shaped by enterprise work, technical foundations, and hands-on learning.</p>
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article class="focus-card">
+                    <i class="bi bi-stars"></i>
+                    <h3>AI &amp; Generative AI</h3>
+                    <p>Artificial Intelligence, Generative AI, local LLM experimentation, and AI applications.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="focus-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Cybersecurity, security fundamentals, Security Assurance, and Linux/security concepts.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="focus-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Programming &amp; Automation</h3>
+                    <p>Python, Java, C++, JavaScript, HTML, CSS, and automation.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="focus-card">
+                    <i class="bi bi-boxes"></i>
+                    <h3>Systems &amp; Enterprise</h3>
+                    <p>Linux, SQL, SAP, SAP EWM, and Enterprise Consulting.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section-box py-5 py-lg-8 bg-light-dark">
+        <div class="container">
+          <div class="mb-5">
+            <p class="section-kicker">03 / Experience</p>
+            <h2 class="display-4 fw-medium">A professional <span class="text-gradient">foundation.</span></h2>
+          </div>
+          
+          <!-- Add new experience items below. Each experience item should be structured as follows:
+          1. Article element with class "experience-item" (add "highlighted" class for the most recent/current role). -->
+
+          <div class="experience-list">
+            <article class="experience-item highlighted">
+              <div class="experience-date">Jun 2024 — Present*</div>
+              <div>
+                <p class="experience-company">IBM <span>· Bhubaneswar</span></p>
+                <h3 class="h4">IT Consultant</h3>
+                <p class="text-muted">Worked with SAP EWM on the Nestlé project, contributing to enterprise software supporting logistics and supply-chain management and their optimization.</p>
+                <div class="tag-row">
+                  <span class="badge bg-secondary">SAP EWM</span>
+                  <span class="badge bg-secondary">Enterprise systems</span>
+                  <span class="badge bg-secondary">Logistics &amp; supply chain</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-date">Nov 2023 — Jan 2024</div>
+              <div>
+                <p class="experience-company">Suvidha Foundation <span>· Remote</span></p>
+                <h3 class="h4">Web Developer</h3>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-date">Aug 2023 — Oct 2023</div>
+              <div>
+                <p class="experience-company">OctaNet Software Services <span>· Bhawanipatna, Odisha</span></p>
+                <h3 class="h4">Web Development Intern</h3>
+                <p class="text-muted">Created web pages using HTML, CSS, and JavaScript.</p>
+                <div class="tag-row">
+                  <span class="badge bg-secondary">HTML</span>
+                  <span class="badge bg-secondary">CSS</span>
+                  <span class="badge bg-secondary">JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <p class="text-muted small mt-3"><small>* "Present" reflects the LinkedIn profile snapshot.</small></p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-box py-5 py-lg-8">
+        <div class="container">
+          <div class="mb-5">
+            <p class="section-kicker">04 / Selected work</p>
+            <h2 class="display-4 fw-medium">Projects &amp; <span class="text-gradient">experiments.</span></h2>
+            <p class="text-muted project-note">A focused selection of public work. I only list projects with a public repository or live site.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <article class="project-card project-featured">
+                <div class="project-symbol" aria-hidden="true">↗</div>
+                <p class="project-type">Web utility</p>
+                <h3 class="h2">IMG2PDF</h3>
+                <p>A web application that converts images to PDF—a practical browser-based utility built as a public project.</p>
+                <div class="tag-row">
+                  <span class="badge bg-secondary">HTML</span>
+                  <span class="badge bg-secondary">Web application</span>
+                </div>
+                <a class="btn btn-link p-0" href="https://github.com/aryanparashar165/IMG2PDF" target="_blank" rel="noopener noreferrer">
+                  View repository <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </article>
+            </div>
+            <div class="col-lg-5">
+              <article class="project-card">
+                <p class="project-type">Portfolio</p>
+                <h3 class="h2">Personal portfolio</h3>
+                <p>A public portfolio site documenting my technical interests, certifications, and professional journey.</p>
+                <div class="tag-row">
+                  <span class="badge bg-secondary">JavaScript</span>
+                  <span class="badge bg-secondary">Web</span>
+                </div>
+                <a class="btn btn-link p-0" href="https://aryanparashar165.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+                  Visit live site <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Credentials Section -->
+      <section id="credentials" class="section-box py-5 py-lg-8 bg-light-dark">
+        <div class="container">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-4">
+              <p class="section-kicker">05 / Credentials</p>
+              <h2 class="display-4 fw-medium">Learning with <span class="text-gradient">intent.</span></h2>
+              <p class="text-muted">Credentials relevant to the direction I'm developing: AI, cybersecurity, Linux, and practical technology foundations. I have earned 10+ badges across AI, Deep Learning, Cloud, and Security.</p>
+              <div class="d-flex flex-column gap-2">
+                <a class="btn btn-outline-primary" href="certifications.html">
+                  View all badges <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a class="btn btn-outline-primary" href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer">
+                  Credly profile <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="credential-list">
+                <a href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer" class="credential">
+                  <span class="credential-index">01</span>
+                  <span><strong>Google Cybersecurity</strong><small>Cybersecurity</small></span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer" class="credential">
+                  <span class="credential-index">02</span>
+                  <span><strong>Foundations of Cybersecurity</strong><small>Cybersecurity</small></span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer" class="credential">
+                  <span class="credential-index">03</span>
+                  <span><strong>Tools of the Trade: Linux and SQL</strong><small>Linux &amp; SQL</small></span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer" class="credential">
+                  <span class="credential-index">04</span>
+                  <span><strong>What Is Generative AI?</strong><small>Generative AI</small></span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://www.credly.com/users/aryadhiswar/badges/credly" target="_blank" rel="noopener noreferrer" class="credential">
+                  <span class="credential-index">05</span>
+                  <span><strong>Career Essentials in Generative AI by Microsoft and LinkedIn</strong><small>Generative AI</small></span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Direction Section -->
+      <section id="direction" class="section-box py-5 py-lg-8">
+        <div class="container">
+          <div class="explore-card">
+            <p class="section-kicker">06 / Current direction</p>
+            <h2 class="display-4 fw-medium">Where I'm <span class="text-gradient">heading.</span></h2>
+            <p class="lead text-muted">I'm actively building my understanding of AI and Generative AI, cybersecurity, AI + security, Python automation, and intelligent systems through study and experimentation. These are the areas I'm developing toward—not claims of completed expertise.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section (FIXED - No Duplicate) -->
+<!-- Contact Section -->
+<section id="contact" class="section-box py-5 py-lg-8 bg-light-dark">
+  <div class="container">
+
+    <div class="contact-panel h-auto">
+
+      <div class="row g-4 g-lg-5 align-items-start">
+
+        <!-- Left: Contact form -->
+        <div class="col-lg-7">
+
+          <p class="section-kicker">07 / Contact</p>
+
+          <h2 class="display-3 fw-medium mb-3">
+            Let's build what's <span class="text-gradient">next.</span>
+          </h2>
+
+          <!-- Form -->
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/xpzbqjnw"
+            method="POST"
+            novalidate
+          >
+
+            <div class="row g-3">
+
+              <!-- Name -->
+              <div class="col-md-6">
+                <label for="contact-name" class="form-label">
+                  Name
+                </label>
+
+                <input
+                  id="contact-name"
+                  name="name"
+                  class="form-control"
+                  type="text"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="contact-email" class="form-label">
+                  Email
+                </label>
+
+                <input
+                  id="contact-email"
+                  name="email"
+                  class="form-control"
+                  type="email"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+
+              <!-- Subject -->
+              <div class="col-12">
+                <label for="contact-subject" class="form-label">
+                  Subject
+                </label>
+
+                <input
+                  id="contact-subject"
+                  name="subject"
+                  class="form-control"
+                  type="text"
+                  required
+                >
+              </div>
+
+              <!-- Message -->
+              <div class="col-12">
+                <label for="contact-message" class="form-label">
+                  Message
+                </label>
+
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <div class="col-12">
+                <button
+                  class="btn btn-primary btn-lg"
+                  type="submit"
+                >
+                  Send message
+                </button>
+
+                <p
+                  id="form-status"
+                  class="form-status"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+
+        <!-- Right: Location + Map -->
+        <div class="col-lg-5">
+
+          <div class="contact-details">
+
+            <div class="contact-location mb-3">
+
+              <p class="mb-1">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <strong>Odisha, India</strong>
+              </p>
+
+              <p class="text-muted small mb-0">
+                Based in Bhubaneswar; available online.
+              </p>
+
+            </div>
+
+            <!-- Responsive map -->
+            <div class="ratio ratio-4x3 rounded overflow-hidden">
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119743.52297962956!2d85.82045315!3d20.300884149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa8%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1789888902470!5m2!1sen!2sin"
+                title="Bhubaneswar, Odisha map"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Bottom links -->
+      <div class="border-top mt-5 pt-4">
+
+        <div class="row align-items-center g-3">
+
+          <div class="col-lg-6">
+            <p class="text-muted small mb-0">
+              Available for technology conversations,
+              collaboration, and remote opportunities.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+
+            <nav
+              class="d-flex flex-wrap justify-content-lg-end gap-4"
+              aria-label="Professional links"
+            >
+
+              <a
+                href="mailto:aryanparashar561@gmail.com"
+                class="btn btn-link p-0"
+              >
+                Email
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aryadhiswar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-link p-0"
+              >
+                LinkedIn
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://github.com/aryanparashar165"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-link p-0"
+              >
+                GitHub
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.credly.com/users/aryadhiswar/badges/credly"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-link p-0"
+              >
+                Credly
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+
+            </nav>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <span>© 2026 Aryan Parashar</span>
+          </div>
+          <div class="col-md-6 text-center text-md-end text-muted small">
+            <span>Designed & built by Aryan, refined with AI.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
+</html>
