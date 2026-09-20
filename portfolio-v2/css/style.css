@@ -403,10 +403,27 @@ nav a:hover::after {
     overflow: hidden;
 }
 
+.circular {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .profile-hex {
     position: relative;
     width: min(360px, 72vw);
     height: min(400px, 80vw);
+    z-index: 2;
+}
+
+.profile-cer {
+     position: relative;
+    width: min(365px, 75vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
     z-index: 2;
 }
 
