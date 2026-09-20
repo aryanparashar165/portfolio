@@ -418,7 +418,7 @@ nav a:hover::after {
     z-index: 2;
 }
 
-.profile-cer {
+.profile-cer{
      position: relative;
     width: min(365px, 75vw);
     aspect-ratio: 1;
